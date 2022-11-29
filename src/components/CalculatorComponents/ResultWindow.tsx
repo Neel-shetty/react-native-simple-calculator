@@ -18,7 +18,8 @@ const styles = StyleSheet.create({
     height: 126,
     alignItems: "center",
     justifyContent: "center",
-    width: Dimension.width * 0.9,
+    // width: Dimension.width * 0.9,
+    width: 315,
     borderRadius: 4,
   },
   title: {
