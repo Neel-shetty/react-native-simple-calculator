@@ -1,14 +1,27 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View } from "react-native";
+import React from "react";
+import { Dimension } from "../../utils/Dimension";
 
 const ResultWindow = () => {
   return (
-    <View>
-      <Text>ResultWindow</Text>
+    <View style={styles.root}>
+      <Text style={styles.title}>ResultWindow</Text>
     </View>
-  )
-}
+  );
+};
 
-export default ResultWindow
+export default ResultWindow;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  root: {
+    backgroundColor: "#212327",
+    height: 126,
+    alignItems: "center",
+    justifyContent: "center",
+    width: Dimension.width * 0.9,
+    borderRadius: 4,
+  },
+  title: {
+    color: "white",
+  },
+});
