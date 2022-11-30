@@ -1,5 +1,5 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import React from "react";
+import React,{useState} from "react";
 import { Dimension } from "../../utils/Dimension";
 
 const NumPad = () => {
