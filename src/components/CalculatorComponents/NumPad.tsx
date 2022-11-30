@@ -2,7 +2,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React,{useState} from "react";
 import { Dimension } from "../../utils/Dimension";
 
-const NumPad = () => {
+const NumPad = (udk:string) => {
   return (
     <View style={styles.root}>
       <View style={{ flexDirection: "row" }}>
