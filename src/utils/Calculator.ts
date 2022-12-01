@@ -60,6 +60,7 @@ export const handleEqual = (state: any) => {
 };
 
 const Calculator = (type, value, state) => {
+  console.log("calculator - ", type, value, state);
   switch (type) {
     case "number":
       return handleNumber(value, state);
