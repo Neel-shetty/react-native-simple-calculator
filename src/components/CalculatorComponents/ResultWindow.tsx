@@ -1,11 +1,14 @@
 import { StyleSheet, Text, View } from "react-native";
-import React from "react";
+import React, { useEffect } from "react";
 import { Dimension } from "../../utils/Dimension";
 
-const ResultWindow = () => {
+const ResultWindow = ({ value }) => {
+  console.log("state = ", value);
+  // const num = state
   return (
     <View style={styles.root}>
-      <Text style={styles.title}>ResultWindow</Text>
+      {/* <Text style={styles.title}>ResultWindow</Text> */}
+      <Text style={styles.title}>{parseFloat(value.currentValue)}</Text>
     </View>
   );
 };
@@ -24,5 +27,7 @@ const styles = StyleSheet.create({
   },
   title: {
     color: "white",
+    fontFamily: "Outfit-Regular",
+    fontSize: 25,
   },
 });

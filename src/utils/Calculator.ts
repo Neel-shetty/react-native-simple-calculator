@@ -8,7 +8,7 @@ export const initialState = {
   previousValue: null,
 };
 
-export const handleNumber = (value: values, state: any ) => {
+export const handleNumber = (value: values, state: any) => {
   if (state.currentValue === "0") {
     return { currentValue: `${value}` };
   }
@@ -17,7 +17,8 @@ export const handleNumber = (value: values, state: any ) => {
     currentValue: `${state.currentValue}${value}`,
   };
 };
-export const handleEqual = (state) => {
+export const handleEqual = (state: any) => {
+  console.log("handle equal -", state);
   const { currentValue, previousValue, operator } = state;
 
   const current = parseFloat(currentValue);
